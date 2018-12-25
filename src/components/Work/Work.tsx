@@ -1,3 +1,12 @@
 import * as React from "react";
 
-export default () => <h1>work</h1>;
+import { Work } from "../../pages/index";
+
+export default (props: Work) => {
+  return (
+    <div>
+      <h3>{props.name}</h3>
+      <p>{props.description}</p>
+    </div>
+  );
+};

@@ -8,43 +8,56 @@ import Works from "../components/Works";
 
 import * as styles from "./Index.module.scss";
 
-interface IndexPageProps {
+export interface Work {
+  name: string;
+  description: string;
+  link?: string;
+  github: string;
+  youtube?: string;
+}
+
+interface IndexProps {
   data: {
-    site: {
-      siteMetadata: {
-        name: string;
-        tagline: string;
-      };
+    allWorksJson: {
+      edges: { node: Work }[];
     };
   };
 }
 
-export const indexPageQuery = graphql`
-  query IndexPageQuery {
-    site {
-      siteMetadata {
-        name
-        tagline
+export default (props: IndexProps) => {
+  // tslint:disable-next-line:no-console
+  console.log(props.data.allWorksJson);
+  return (
+    <Layout>
+      <div className={styles.Container}>
+        <About />
+        <Works>
+          {props.data.allWorksJson.edges.map(value => (
+            <Work
+              name={value.node.name}
+              description={value.node.description}
+              link={value.node.link}
+              github={value.node.github}
+              youtube={value.node.youtube}
+            />
+          ))}
+        </Works>
+      </div>
+    </Layout>
+  );
+};
+
+export const indexQuery = graphql`
+  query IndexQuery {
+    allWorksJson {
+      edges {
+        node {
+          name
+          description
+          link
+          github
+        }
       }
     }
   }
 `;
-
-export default class IndexPage extends React.Component<IndexPageProps, {}> {
-  public render() {
-    const { name, tagline } = this.props.data.site.siteMetadata;
-
-    return (
-      <Layout>
-        <div className={styles.Container}>
-          <h1>{name}</h1>
-          <p>{tagline}</p>
-          <About />
-          <Works>
-            <Work />
-          </Works>
-        </div>
-      </Layout>
-    );
-  }
-}

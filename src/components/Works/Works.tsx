@@ -2,7 +2,7 @@ import * as React from "react";
 
 export default ({ children }: any) => (
   <div>
-    <h1>Works</h1>
+    <h2>Works</h2>
     {children}
   </div>
 );
