@@ -5,7 +5,7 @@
   "rules": {
     "interface-name": [false],
     "jsx-no-multiline-js": [false],
-    "arrow-parens": ["as-needed"],
+    "arrow-parens": [false],
     "array-type": [true, "array"]
   },
   "rulesDirectory": []
