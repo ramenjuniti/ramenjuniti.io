@@ -4,23 +4,27 @@
     "description": "webVR game",
     "link": "https://vr-avoid-game.firebaseapp.com/",
     "github": "https://github.com/ramenjuniti/VR-Avoid-Game",
-    "youtube": "https://www.youtube.com/watch?v=OUO-4f3kzug"
+    "youtube": "https://www.youtube.com/watch?v=OUO-4f3kzug",
+    "tag": ["JavaScript", "React", "VR", "Firebase"]
   },
   {
     "name": "Summary Generator",
     "description": "web application for summarizing Japanese documents",
     "link": "ttps://ramenjuniti.github.io/summary-generator/",
-    "github": "https://github.com/ramenjuniti/summary-generator"
+    "github": "https://github.com/ramenjuniti/summary-generator",
+    "tag": ["TypeScript", "React"]
   },
   {
     "name": "Summary Generator API",
     "description": "API for summarizing Japanese documents",
-    "github": "https://github.com/ramenjuniti/summary-generator-api"
+    "github": "https://github.com/ramenjuniti/summary-generator-api",
+    "tag": ["Golang", "Google App Engine"]
   },
   {
     "name": "lexrank-mmr",
     "description": "LexRank and MMR package",
     "link": "https://godoc.org/github.com/ramenjuniti/lexrank-mmr",
-    "github": "https://github.com/ramenjuniti/lexrank-mmr"
+    "github": "https://github.com/ramenjuniti/lexrank-mmr",
+    "tag": ["Golang", "NLP"]
   }
 ]
