@@ -13,7 +13,6 @@ module.exports = {
         }
       }
     },
-    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-transformer-json`,
       options: {
