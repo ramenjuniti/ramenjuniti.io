@@ -9,6 +9,23 @@ import WorkContent from "../components/WorkContent";
 
 import * as styles from "./index.module.scss";
 
+export interface MarkdownData {
+  html: string;
+}
+
+export interface AccoutData {
+  name: string;
+  label: string;
+  link: string;
+}
+
+export interface CareerData {
+  name: string;
+  term: string;
+  position: string;
+  description: string;
+}
+
 export interface WorkContentData {
   name: string;
   description: string;
@@ -20,6 +37,15 @@ export interface WorkContentData {
 
 interface IndexProps {
   data: {
+    allMarkdownRemark: {
+      edges: { node: MarkdownData }[];
+    };
+    allAccoutsJson: {
+      edges: { node: AccoutData }[];
+    };
+    allCareerJson: {
+      edges: { node: CareerData }[];
+    };
     allWorkJson: {
       edges: { node: WorkContentData }[];
     };
@@ -32,7 +58,7 @@ export default (props: IndexProps) => {
   return (
     <Layout>
       <div className={styles.Container}>
-        <About />
+        <About html={props.data.allMarkdownRemark.edges[0].node.html} />
         <Work>
           {props.data.allWorkJson.edges.map(value => (
             <WorkContent
@@ -51,7 +77,18 @@ export default (props: IndexProps) => {
 };
 
 export const indexQuery = graphql`
-  query IndexQuery {
+  query indexQuery {
+    allMarkdownRemark {
+      edges {
+        node {
+          html
+          headings {
+            depth
+            value
+          }
+        }
+      }
+    }
     allAccountsJson {
       edges {
         node {

@@ -1,3 +1,7 @@
 import * as React from "react";
 
-export default () => <h1>about</h1>;
+import { MarkdownData } from "../../pages/index";
+
+export default ({ html }: MarkdownData) => (
+  <div dangerouslySetInnerHTML={{ __html: html }} />
+);
