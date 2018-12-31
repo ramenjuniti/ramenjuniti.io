@@ -103,7 +103,7 @@ export const indexQuery = graphql`
         node {
           name
           term
-          post
+          position
           description
         }
       }
