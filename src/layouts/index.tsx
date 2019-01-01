@@ -6,7 +6,7 @@ import Header from "../components/Header";
 import styles from "./index.module.scss";
 
 export default ({ children }: any) => (
-  <div>
+  <div className={styles.container}>
     <Header />
     {children}
     <Footer />
