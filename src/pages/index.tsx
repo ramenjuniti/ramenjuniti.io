@@ -7,7 +7,7 @@ import About from "../components/About";
 import Work from "../components/Work";
 import WorkContent from "../components/WorkContent";
 
-import * as styles from "./index.module.scss";
+import styles from "./index.module.scss";
 
 export interface MarkdownData {
   html: string;
