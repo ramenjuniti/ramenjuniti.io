@@ -4,8 +4,8 @@ import * as React from "react";
 import Layout from "../layouts";
 
 import About from "../components/About";
+import Career from "../components/Career";
 import Work from "../components/Work";
-import WorkContent from "../components/WorkContent";
 
 import styles from "./index.module.scss";
 
@@ -13,13 +13,13 @@ export interface MarkdownData {
   html: string;
 }
 
-export interface AccoutData {
+export interface AccountData {
   name: string;
   label: string;
   link: string;
 }
 
-export interface CareerData {
+export interface CareerContentData {
   name: string;
   term: string;
   position: string;
@@ -35,16 +35,16 @@ export interface WorkContentData {
   tag: string[];
 }
 
-interface IndexProps {
+interface Props {
   data: {
     allMarkdownRemark: {
       edges: { node: MarkdownData }[];
     };
-    allAccoutsJson: {
-      edges: { node: AccoutData }[];
+    allAccountsJson: {
+      edges: { node: AccountData }[];
     };
     allCareerJson: {
-      edges: { node: CareerData }[];
+      edges: { node: CareerContentData }[];
     };
     allWorkJson: {
       edges: { node: WorkContentData }[];
@@ -52,31 +52,25 @@ interface IndexProps {
   };
 }
 
-export default (props: IndexProps) => {
+export default ({ data }: Props) => {
+  const html = data.allMarkdownRemark.edges[0].node.html;
+  const accounts = data.allAccountsJson.edges.map(item => item.node);
+  const work = data.allWorkJson.edges.map(item => item.node);
+  const career = data.allCareerJson.edges.map(item => item.node);
   // tslint:disable-next-line:no-console
-  console.log(props.data);
+  console.log(data);
   return (
-    <Layout>
+    <Layout accounts={accounts}>
       <div className={styles.Container}>
-        <About html={props.data.allMarkdownRemark.edges[0].node.html} />
-        <Work>
-          {props.data.allWorkJson.edges.map(value => (
-            <WorkContent
-              name={value.node.name}
-              description={value.node.description}
-              link={value.node.link}
-              github={value.node.github}
-              youtube={value.node.youtube}
-              tag={value.node.tag}
-            />
-          ))}
-        </Work>
+        <About html={html} />
+        <Work work={work} />
+        <Career career={career} />
       </div>
     </Layout>
   );
 };
 
-export const indexQuery = graphql`
+export const query = graphql`
   query indexQuery {
     allMarkdownRemark {
       edges {

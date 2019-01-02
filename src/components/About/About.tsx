@@ -6,7 +6,7 @@ import styles from "./About.module.scss";
 
 export default ({ html }: MarkdownData) => (
   <div className={styles.container}>
-    <h1>About</h1>
+    <h2>About</h2>
     <div dangerouslySetInnerHTML={{ __html: html }} />
   </div>
 );

@@ -1,5 +1,13 @@
 import * as React from "react";
 
-export default () => {
-  return <h3>CareerContent</h3>;
-};
+import { CareerContentData } from "../../pages/index";
+
+import styles from "./CareerContent.module.scss";
+
+export default ({ name, term, position, description }: CareerContentData) => (
+  <div className={styles.container}>
+    <h3>{name}</h3>
+    <p>{term}</p>
+    <p>{position}</p>
+  </div>
+);

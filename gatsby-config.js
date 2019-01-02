@@ -1,5 +1,33 @@
 module.exports = {
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "ramenjuniti",
+        short_name: "ramenjuniti",
+        start_url: "/",
+        background_color: "#BEC8C8",
+        theme_color: "#FAAD13",
+        display: "minimal-ui",
+        icons: [
+          {
+            src: `./src/assets/img/me.png`,
+            sizes: `180x180`,
+            type: `image/png`
+          },
+          {
+            src: `./src/assets/img/me.png`,
+            sizes: `192x192`,
+            type: `image/png`
+          },
+          {
+            src: `./src/assets/img/me.png`,
+            sizes: `512x512`,
+            type: `image/png`
+          }
+        ]
+      }
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-tslint`,

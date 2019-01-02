@@ -4,7 +4,14 @@ import { WorkContentData } from "../../pages/index";
 
 import styles from "./WorkContent.module.scss";
 
-export default ({ name, description }: WorkContentData) => {
+export default ({
+  name,
+  description,
+  link,
+  github,
+  youtube,
+  tag
+}: WorkContentData) => {
   return (
     <div className={styles.container}>
       <h3>{name}</h3>

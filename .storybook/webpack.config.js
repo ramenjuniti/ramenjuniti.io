@@ -33,9 +33,7 @@ module.exports = config => {
       use: [
         {
           loader: "file-loader",
-          options: {
-            name: "[path][name].[ext]"
-          }
+          options: {}
         }
       ]
     }
