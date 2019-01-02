@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { WorkContentData } from "../../pages/index";
 
-import styles from "./Work.module.scss";
+import styles from "./WorkContent.module.scss";
 
 export default ({ name, description }: WorkContentData) => {
   return (
