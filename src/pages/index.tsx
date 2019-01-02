@@ -1,42 +1,117 @@
-import { graphql } from 'gatsby';
-import * as React from 'react';
-import * as styles from './Index.module.scss';
+import { graphql } from "gatsby";
+import * as React from "react";
 
-interface IndexPageProps {
+import Layout from "../layouts";
+
+import About from "../components/About";
+import Career from "../components/Career";
+import Work from "../components/Work";
+
+import styles from "./index.module.scss";
+
+export interface MarkdownData {
+  html: string;
+}
+
+export interface AccountData {
+  name: string;
+  label: string;
+  link: string;
+}
+
+export interface CareerContentData {
+  name: string;
+  term: string;
+  position: string;
+  description: string;
+}
+
+export interface WorkContentData {
+  name: string;
+  description: string;
+  link?: string;
+  github: string;
+  youtube?: string;
+  tag: string[];
+}
+
+interface Props {
   data: {
-    site: {
-      siteMetadata: {
-        name: string;
-        tagline: string;
-      },
-    },
+    allMarkdownRemark: {
+      edges: { node: MarkdownData }[];
+    };
+    allAccountsJson: {
+      edges: { node: AccountData }[];
+    };
+    allCareerJson: {
+      edges: { node: CareerContentData }[];
+    };
+    allWorkJson: {
+      edges: { node: WorkContentData }[];
+    };
   };
 }
 
-export const indexPageQuery = graphql`
-  query IndexPageQuery {
-    site {
-      siteMetadata {
-        name
-        tagline
+export default ({ data }: Props) => {
+  const html = data.allMarkdownRemark.edges[0].node.html;
+  const accounts = data.allAccountsJson.edges.map(item => item.node);
+  const work = data.allWorkJson.edges.map(item => item.node);
+  const career = data.allCareerJson.edges.map(item => item.node);
+  // tslint:disable-next-line:no-console
+  console.log(data);
+  return (
+    <Layout accounts={accounts}>
+      <div className={styles.Container}>
+        <About html={html} />
+        <Work work={work} />
+        <Career career={career} />
+      </div>
+    </Layout>
+  );
+};
+
+export const query = graphql`
+  query indexQuery {
+    allMarkdownRemark {
+      edges {
+        node {
+          html
+          headings {
+            depth
+            value
+          }
+        }
+      }
+    }
+    allAccountsJson {
+      edges {
+        node {
+          name
+          label
+          link
+        }
+      }
+    }
+    allCareerJson {
+      edges {
+        node {
+          name
+          term
+          position
+          description
+        }
+      }
+    }
+    allWorkJson {
+      edges {
+        node {
+          name
+          description
+          link
+          github
+          tag
+        }
       }
     }
   }
 `;
-
-export default class IndexPage extends React.Component<IndexPageProps, {}> {
-
-  public render() {
-    const {
-      name,
-      tagline,
-    } = this.props.data.site.siteMetadata;
-
-    return (
-      <div className={styles.Container}>
-        <h1>{name}</h1>
-        <p>{tagline}</p>
-      </div>
-    );
-  }
-}
