@@ -1,11 +1,11 @@
 import { graphql } from "gatsby";
 import * as React from "react";
 
-import Account from "../components/Account";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Account from "../Account";
+import Footer from "../Footer";
+import Header from "../Header";
 
-import { AccountData } from "../pages/index";
+import { AccountData } from "../../pages/index";
 
 import styles from "./index.module.scss";
 
