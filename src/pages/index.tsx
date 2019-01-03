@@ -1,10 +1,9 @@
 import { graphql } from "gatsby";
 import * as React from "react";
 
-import Layout from "../layouts";
-
 import About from "../components/About";
 import Career from "../components/Career";
+import Layout from "../components/Layout";
 import Work from "../components/Work";
 
 import styles from "./index.module.scss";
