@@ -9,10 +9,10 @@ interface Props {
 
 export default ({ children }: Props) => (
   <header className={styles.container}>
-    <div>
+    <div className={styles.avatorContainer}>
       <Avatar size={64} />
       <h1>ramenjuniti</h1>
     </div>
-    <div>{children}</div>
+    <div className={styles.accountsContainer}>{children}</div>
   </header>
 );

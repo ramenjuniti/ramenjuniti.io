@@ -10,9 +10,7 @@ const IconFont = Icon.createFromIconfontCN({
 });
 
 export default ({ name, label, link }: AccountData) => (
-  <div className={styles.container}>
-    <a href={link} target="_blank" rel="noopener">
-      <IconFont type={`icon-${name}`} />
-    </a>
-  </div>
+  <a href={link} className={styles.container} target="_blank" rel="noopener">
+    <IconFont type={`icon-${name}`} />
+  </a>
 );
