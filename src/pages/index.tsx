@@ -1,3 +1,4 @@
+import { Divider } from "antd";
 import { graphql } from "gatsby";
 import * as React from "react";
 
@@ -62,7 +63,9 @@ export default ({ data }: Props) => {
     <Layout accounts={accounts}>
       <div className={styles.Container}>
         <About html={html} />
+        <Divider />
         <Work work={work} />
+        <Divider />
         <Career career={career} />
       </div>
     </Layout>

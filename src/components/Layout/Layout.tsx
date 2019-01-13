@@ -1,5 +1,4 @@
 import { Col, Row } from "antd";
-import { graphql } from "gatsby";
 import * as React from "react";
 
 import Account from "../Account";
