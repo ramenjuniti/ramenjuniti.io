@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Thasadith");
+
 .container {
-  width: 100%;
   height: 100%;
   padding: 5em;
   position: relative;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,6 +19,17 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
     z-index: -1;
   }
 
@@ -44,6 +54,9 @@
   }
 
   @media screen and (min-width: 992px) {
+    position: fixed;
+    width: inherit;
+
     &::before {
       background-position: right;
     }
