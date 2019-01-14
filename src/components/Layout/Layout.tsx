@@ -1,4 +1,4 @@
-import { Col, Row } from "antd";
+import { BackTop, Col, Row } from "antd";
 import * as React from "react";
 
 import Account from "../Account";
@@ -30,6 +30,7 @@ export default ({ accounts, children }: Props) => {
           <Footer />
         </Col>
       </Row>
+      <BackTop />
     </div>
   );
 };
