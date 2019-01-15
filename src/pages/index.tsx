@@ -61,7 +61,7 @@ export default ({ data }: Props) => {
   console.log(data);
   return (
     <Layout accounts={accounts}>
-      <div className={styles.Container}>
+      <div className={styles.container}>
         <About html={html} />
         <Divider />
         <Work work={work} />
@@ -111,6 +111,7 @@ export const query = graphql`
           description
           link
           github
+          youtube
           tag
         }
       }
