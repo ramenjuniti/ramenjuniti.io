@@ -14,7 +14,7 @@ interface Props {
 export default ({ work }: Props) => (
   <div className={styles.container}>
     <h2>Work</h2>
-    <Row type="flex">
+    <Row type="flex" gutter={16}>
       {work.map(item => (
         <Col lg={{ span: 12 }} xs={{ span: 24 }}>
           <WorkContent
