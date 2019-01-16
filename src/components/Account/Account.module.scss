@@ -1,5 +1,7 @@
+@import "../../utils/color.scss";
+
 .container {
   margin: 0.5em;
-  color: #bec8c8;
+  color: $subTitleColor;
   font-size: 2em;
 }
