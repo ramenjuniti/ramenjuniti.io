@@ -57,8 +57,7 @@ export default ({ data }: Props) => {
   const accounts = data.allAccountsJson.edges.map(item => item.node);
   const work = data.allWorkJson.edges.map(item => item.node);
   const career = data.allCareerJson.edges.map(item => item.node);
-  // tslint:disable-next-line:no-console
-  console.log(data);
+
   return (
     <Layout accounts={accounts}>
       <div className={styles.container}>
