@@ -1,6 +1,7 @@
 import { Timeline } from "antd";
 import * as React from "react";
 
+import IconFont from "../../utils/IconFont";
 import CareerContent from "../CareerContent";
 
 import { CareerContentData } from "../../pages/index";
@@ -12,11 +13,15 @@ interface Props {
 }
 
 export default ({ career }: Props) => (
-  <div className={styles.container}>
+  <article className={styles.container}>
     <h2>Career</h2>
     <Timeline className={styles.TimelineContainer}>
       {career.map(item => (
-        <Timeline.Item>
+        <Timeline.Item
+          dot={
+            <IconFont type={`icon-${item.type}`} className={styles.IconFont} />
+          }
+        >
           <CareerContent
             name={item.name}
             term={item.term}
@@ -26,5 +31,5 @@ export default ({ career }: Props) => (
         </Timeline.Item>
       ))}
     </Timeline>
-  </div>
+  </article>
 );

@@ -24,6 +24,7 @@ export interface CareerContentData {
   term: string;
   position: string;
   description: string;
+  type?: string;
 }
 
 export interface WorkContentData {
@@ -101,6 +102,7 @@ export const query = graphql`
           term
           position
           description
+          type
         }
       }
     }
