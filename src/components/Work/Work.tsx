@@ -12,7 +12,7 @@ interface Props {
 }
 
 export default ({ work }: Props) => (
-  <div className={styles.container}>
+  <article className={styles.container}>
     <h2>Work</h2>
     <Row type="flex" gutter={16}>
       {work.map(item => (
@@ -28,5 +28,5 @@ export default ({ work }: Props) => (
         </Col>
       ))}
     </Row>
-  </div>
+  </article>
 );
