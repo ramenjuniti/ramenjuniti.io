@@ -14,7 +14,7 @@ export default ({ children }: Props) => (
     <div>
       <Avatar size={96} src={myIcon} />
       <h1>ramenjuniti</h1>
-      <p>a student.</p>
+      <p>a student developing web applications as a hobby.</p>
       <div>{children}</div>
     </div>
   </header>

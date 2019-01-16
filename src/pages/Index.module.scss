@@ -1,15 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Thasadith");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 :global {
   body {
-    font-family: "Thasadith", sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
-  h2,
-  h3 {
-    font-family: "Thasadith", sans-serif;
-    font-weight: 900;
-  }
-  p {
+  h1 {
     font-family: "Thasadith", sans-serif;
   }
 }

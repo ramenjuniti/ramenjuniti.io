@@ -26,7 +26,6 @@ export default ({ career }: Props) => (
             name={item.name}
             term={item.term}
             position={item.position}
-            description={item.description}
           />
         </Timeline.Item>
       ))}
