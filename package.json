@@ -17,6 +17,7 @@
     "gatsby": "^2.0.40",
     "gatsby-plugin-antd": "^2.0.2",
     "gatsby-plugin-less": "^2.0.8",
+    "gatsby-plugin-manifest": "^2.0.13",
     "gatsby-plugin-sass": "^2.0.3",
     "gatsby-plugin-typescript": "^2.0.1",
     "gatsby-source-filesystem": "^2.0.12",
