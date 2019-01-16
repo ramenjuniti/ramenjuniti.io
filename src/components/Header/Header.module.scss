@@ -1,3 +1,5 @@
+@import "../../utils/color.scss";
+
 .container {
   height: 100%;
   padding: 5em;
@@ -36,18 +38,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Thasadith", sans-serif;
 
     > * {
       margin: 1rem 0;
     }
 
     h1 {
-      color: white;
+      color: $titleColor;
     }
 
     p {
-      color: #bec8c8;
+      color: $subTitleColor;
     }
   }
 

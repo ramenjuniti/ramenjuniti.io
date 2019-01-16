@@ -16,7 +16,7 @@ export default ({
 }: WorkContentData) => {
   const title = (
     <div className={styles.titleContainer}>
-      <p>{name}</p>
+      <h3>{name}</h3>
       <div>
         {link && (
           <a href={link} target="_blank" rel="noopener">
