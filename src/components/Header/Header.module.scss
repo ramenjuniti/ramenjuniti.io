@@ -2,7 +2,7 @@
 
 .container {
   height: 100%;
-  padding: 5em;
+  padding: 2em;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -53,6 +53,7 @@
   }
 
   @media screen and (min-width: 992px) {
+    padding: 5em;
     position: fixed;
     width: inherit;
 
