@@ -10,7 +10,7 @@
   {
     "name": "Summary Generator",
     "description": "web application for summarizing Japanese documents",
-    "link": "ttps://ramenjuniti.github.io/summary-generator/",
+    "link": "https://ramenjuniti.github.io/summary-generator/",
     "github": "https://github.com/ramenjuniti/summary-generator",
     "tag": ["TypeScript", "React"]
   },
@@ -21,10 +21,10 @@
     "tag": ["Golang", "Google App Engine"]
   },
   {
-    "name": "lexrank-mmr",
+    "name": "lexrankmmr",
     "description": "LexRank and MMR package",
-    "link": "https://godoc.org/github.com/ramenjuniti/lexrank-mmr",
-    "github": "https://github.com/ramenjuniti/lexrank-mmr",
+    "link": "https://godoc.org/github.com/ramenjuniti/lexrankmmr",
+    "github": "https://github.com/ramenjuniti/lexrankmmr",
     "tag": ["Golang", "NLP"]
   }
 ]

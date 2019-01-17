@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Thasadith");
+@import "../../utils/color.scss";
 
 .container {
   height: 100%;
-  padding: 5em;
+  padding: 2em;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -38,22 +38,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Thasadith", sans-serif;
 
     > * {
       margin: 1rem 0;
     }
 
     h1 {
-      color: white;
+      color: $titleColor;
     }
 
     p {
-      color: #bec8c8;
+      color: $subTitleColor;
     }
   }
 
   @media screen and (min-width: 992px) {
+    padding: 5em;
     position: fixed;
     width: inherit;
 

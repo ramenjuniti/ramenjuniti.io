@@ -1,3 +1,4 @@
+import { Col, Row } from "antd";
 import * as React from "react";
 
 import WorkContent from "../WorkContent";
@@ -11,17 +12,14 @@ interface Props {
 }
 
 export default ({ work }: Props) => (
-  <div className={styles.container}>
+  <article className={styles.container}>
     <h2>Work</h2>
-    {work.map(item => (
-      <WorkContent
-        name={item.name}
-        description={item.description}
-        link={item.link}
-        github={item.github}
-        youtube={item.youtube}
-        tag={item.tag}
-      />
-    ))}
-  </div>
+    <Row type="flex" gutter={16}>
+      {work.map(item => (
+        <Col lg={{ span: 12 }} xs={{ span: 24 }}>
+          <WorkContent {...item} />
+        </Col>
+      ))}
+    </Row>
+  </article>
 );

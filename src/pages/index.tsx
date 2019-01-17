@@ -23,7 +23,7 @@ export interface CareerContentData {
   name: string;
   term: string;
   position: string;
-  description: string;
+  type?: string;
 }
 
 export interface WorkContentData {
@@ -37,6 +37,12 @@ export interface WorkContentData {
 
 interface Props {
   data: {
+    site: {
+      siteMetadata: {
+        title: string;
+        subTitle: string;
+      };
+    };
     allMarkdownRemark: {
       edges: { node: MarkdownData }[];
     };
@@ -53,15 +59,15 @@ interface Props {
 }
 
 export default ({ data }: Props) => {
+  const siteMetadata = data.site.siteMetadata;
   const html = data.allMarkdownRemark.edges[0].node.html;
   const accounts = data.allAccountsJson.edges.map(item => item.node);
   const work = data.allWorkJson.edges.map(item => item.node);
   const career = data.allCareerJson.edges.map(item => item.node);
-  // tslint:disable-next-line:no-console
-  console.log(data);
+
   return (
-    <Layout accounts={accounts}>
-      <div className={styles.Container}>
+    <Layout siteMetadata={siteMetadata} accounts={accounts}>
+      <div className={styles.container}>
         <About html={html} />
         <Divider />
         <Work work={work} />
@@ -74,6 +80,12 @@ export default ({ data }: Props) => {
 
 export const query = graphql`
   query indexQuery {
+    site {
+      siteMetadata {
+        title
+        subTitle
+      }
+    }
     allMarkdownRemark {
       edges {
         node {
@@ -100,7 +112,7 @@ export const query = graphql`
           name
           term
           position
-          description
+          type
         }
       }
     }
@@ -111,6 +123,7 @@ export const query = graphql`
           description
           link
           github
+          youtube
           tag
         }
       }
