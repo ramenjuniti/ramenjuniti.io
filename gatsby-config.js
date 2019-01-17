@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `ramenjuniti`,
+    title: "ramenjuniti",
+    subTitle: "a student who develops web applications as a hobby."
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
