@@ -22,11 +22,7 @@ export default ({ career }: Props) => (
             <IconFont type={`icon-${item.type}`} className={styles.IconFont} />
           }
         >
-          <CareerContent
-            name={item.name}
-            term={item.term}
-            position={item.position}
-          />
+          <CareerContent {...item} />
         </Timeline.Item>
       ))}
     </Timeline>
