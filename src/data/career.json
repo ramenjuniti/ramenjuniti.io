@@ -3,18 +3,21 @@
     "name": "Drecom Co., Ltd.",
     "term": "2018/05/15 ~ ",
     "position": "Engineer internship",
+    "description": "ブロックチェーンを用いたウェブアプリケーション開発",
     "type": "company"
   },
   {
     "name": "Yahoo Japan Corporation",
     "term": "2018/02/05 ~ 2018/02/09",
     "position": "Engineer internship",
+    "description": "短期間でのチーム開発",
     "type": "company"
   },
   {
     "name": "The Meiji University School of Science and Technology",
     "term": "2015/04/01 ~ ",
     "position": "Bachelor",
+    "description": "Computer Science",
     "type": "university"
   }
 ]
