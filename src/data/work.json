@@ -1,28 +1,28 @@
 [
   {
     "name": "VR Avoid Game",
-    "description": "webVR game",
+    "description": "ReactVR（現React360）で作った、ひたすら迫り来る障害物を避けるWebVRゲーム。スマホであれば2眼モードになるので、VRレンズを使用することで、VRでのプレイが可能。",
     "link": "https://vr-avoid-game.firebaseapp.com/",
     "github": "https://github.com/ramenjuniti/VR-Avoid-Game",
-    "youtube": "https://www.youtube.com/watch?v=OUO-4f3kzug",
+    "youtube": "https://www.youtube.com/watch?v=OUO-4）3kzug",
     "tag": ["JavaScript", "React", "VR", "Firebase"]
   },
   {
     "name": "Summary Generator",
-    "description": "web application for summarizing Japanese documents",
+    "description": "要約アルゴリズムであるLexRankとMMRを利用した、日本語を要約するWebアプリ。文書中の文をそのまま使用する抽出型要約。パラメータ調整可能。",
     "link": "https://ramenjuniti.github.io/summary-generator/",
     "github": "https://github.com/ramenjuniti/summary-generator",
     "tag": ["TypeScript", "React"]
   },
   {
     "name": "Summary Generator API",
-    "description": "API for summarizing Japanese documents",
+    "description": "Summary Generatorのバックエンド部分で、自作したGoのパッケージlexrankmmrを使用。",
     "github": "https://github.com/ramenjuniti/summary-generator-api",
     "tag": ["Golang", "Google App Engine"]
   },
   {
     "name": "lexrankmmr",
-    "description": "LexRank and MMR package",
+    "description": "要約アルゴリズムであるLexRankとMMRで、与えられた文書中の文の重要度を算出するGoのパッケージ。",
     "link": "https://godoc.org/github.com/ramenjuniti/lexrankmmr",
     "github": "https://github.com/ramenjuniti/lexrankmmr",
     "tag": ["Golang", "NLP"]
