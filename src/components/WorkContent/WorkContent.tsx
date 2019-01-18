@@ -39,9 +39,9 @@ export default ({
   return (
     <Card title={title} hoverable={true} className={styles.container}>
       <p>{description}</p>
-      <div className={styles.tagContainer}>
+      <div>
         {tag.map(item => (
-          <Tag>{item}</Tag>
+          <Tag color="orange">{item}</Tag>
         ))}
       </div>
     </Card>
