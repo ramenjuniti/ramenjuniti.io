@@ -2,7 +2,9 @@ module.exports = {
   siteMetadata: {
     title: "ramenjuniti",
     subTitle:
-      "a student who studies at university or develops web applications."
+      "a student who studies at university or develops web applications.",
+    description: "ramenjuniti's portfolio site",
+    url: "https://ramenjuniti.io"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -41,6 +41,8 @@ interface Props {
       siteMetadata: {
         title: string;
         subTitle: string;
+        description: string;
+        url: string;
       };
     };
     allMarkdownRemark: {
@@ -84,6 +86,8 @@ export const query = graphql`
       siteMetadata {
         title
         subTitle
+        description
+        url
       }
     }
     allMarkdownRemark {
