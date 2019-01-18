@@ -8,6 +8,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "lint": "tslint 'src/**/*.ts{,x}'",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },

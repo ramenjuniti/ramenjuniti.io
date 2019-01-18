@@ -21,4 +21,4 @@ install:
   - yarn
 
 script:
-  - yarn tslint-check
+  - yarn lint
