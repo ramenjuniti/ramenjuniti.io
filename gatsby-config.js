@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    name: "ramenjuniti",
     title: "ramenjuniti",
     subTitle:
       "a student who studies at university or develops web applications.",

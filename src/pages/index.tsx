@@ -39,6 +39,7 @@ interface Props {
   data: {
     site: {
       siteMetadata: {
+        name: string;
         title: string;
         subTitle: string;
         description: string;
@@ -84,6 +85,7 @@ export const query = graphql`
   query indexQuery {
     site {
       siteMetadata {
+        name
         title
         subTitle
         description

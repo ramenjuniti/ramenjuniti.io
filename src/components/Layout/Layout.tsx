@@ -14,6 +14,7 @@ import styles from "./index.module.scss";
 
 interface Props {
   siteMetadata: {
+    name: string;
     title: string;
     subTitle: string;
     description: string;
@@ -36,7 +37,7 @@ export default ({ siteMetadata, accounts, children }: Props) => {
           { property: "og:image", content: myIcon },
           { property: "og:description", content: siteMetadata.description },
           { name: "twitter:card", content: "summary" },
-          { name: "twitter:site", content: `@${siteMetadata.title}` }
+          { name: "twitter:site", content: `@${siteMetadata.name}` }
         ]}
       />
       <Row type="flex">
