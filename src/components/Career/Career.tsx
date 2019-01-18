@@ -1,6 +1,5 @@
 import { Timeline } from "antd";
 import * as React from "react";
-import FadeIn from "react-fade-in";
 
 import IconFont from "../../utils/IconFont";
 import CareerContent from "../CareerContent";
@@ -16,21 +15,16 @@ interface Props {
 export default ({ career }: Props) => (
   <article className={styles.container}>
     <h2>Career</h2>
-    <FadeIn>
-      <Timeline className={styles.TimelineContainer}>
-        {career.map(item => (
-          <Timeline.Item
-            dot={
-              <IconFont
-                type={`icon-${item.type}`}
-                className={styles.IconFont}
-              />
-            }
-          >
-            <CareerContent {...item} />
-          </Timeline.Item>
-        ))}
-      </Timeline>
-    </FadeIn>
+    <Timeline className={styles.TimelineContainer}>
+      {career.map(item => (
+        <Timeline.Item
+          dot={
+            <IconFont type={`icon-${item.type}`} className={styles.IconFont} />
+          }
+        >
+          <CareerContent {...item} />
+        </Timeline.Item>
+      ))}
+    </Timeline>
   </article>
 );
