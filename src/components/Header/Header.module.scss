@@ -49,6 +49,7 @@
 
     p {
       color: $subTitleColor;
+      text-align: center;
     }
   }
 
@@ -65,6 +66,10 @@
       height: 70%;
       justify-content: space-between;
       align-items: flex-end;
+
+      p {
+        text-align: right;
+      }
     }
   }
 }
