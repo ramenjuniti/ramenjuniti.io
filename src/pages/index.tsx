@@ -15,7 +15,6 @@ export interface MarkdownData {
 
 export interface AccountData {
   name: string;
-  label: string;
   link: string;
 }
 
@@ -101,7 +100,6 @@ export const query = graphql`
       edges {
         node {
           name
-          label
           link
         }
       }

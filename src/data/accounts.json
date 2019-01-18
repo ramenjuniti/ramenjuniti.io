@@ -1,17 +1,14 @@
 [
   {
     "name": "Twitter",
-    "label": "@ramenjuniti",
     "link": "https://twitter.com/ramenjuniti"
   },
   {
     "name": "GitHub",
-    "label": "@ramenjuniti",
     "link": "https://github.com/ramenjuniti"
   },
   {
     "name": "HatenaBlog",
-    "label": "@ramenjuniti",
     "link": "http://ramenjuniti.hatenablog.com"
   }
 ]
