@@ -4,7 +4,7 @@ module.exports = {
     title: "ramenjuniti",
     subTitle:
       "a student who studies at university or develops web applications.",
-    description: "ramenjuniti's portfolio site",
+    description: "ramenjuniti's personal site",
     url: "https://ramenjuniti.io"
   },
   plugins: [
