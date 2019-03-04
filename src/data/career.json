@@ -15,7 +15,14 @@
   },
   {
     "name": "The Meiji University School of Science and Technology",
-    "term": "2015/04/01 ~ ",
+    "term": "2019/04/01 ~ ",
+    "position": "Master",
+    "description": "Computer Science",
+    "type": "university"
+  },
+  {
+    "name": "The Meiji University School of Science and Technology",
+    "term": "2015/04/01 ~ 2019/03/26",
     "position": "Bachelor",
     "description": "Computer Science",
     "type": "university"
