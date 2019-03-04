@@ -41,7 +41,9 @@ export default ({
       <p>{description}</p>
       <div>
         {tag.map(item => (
-          <Tag color="orange">{item}</Tag>
+          <Tag color="orange" className={styles.tab}>
+            {item}
+          </Tag>
         ))}
       </div>
     </Card>
