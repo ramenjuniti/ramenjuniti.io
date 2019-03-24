@@ -1,30 +1,30 @@
 [
   {
-    "name": "Drecom Co., Ltd.",
-    "term": "2018/05/15 ~ ",
-    "position": "Engineer internship",
-    "description": "ブロックチェーンを用いたウェブアプリケーション開発",
+    "name": "株式会社ドリコム",
+    "term": "2018/05 ~ ",
+    "position": "エンジニアアルバイト",
+    "description": "ウェブアプリケーション開発",
     "type": "company"
   },
   {
-    "name": "Yahoo Japan Corporation",
+    "name": "ヤフー株式会社",
     "term": "2018/02/05 ~ 2018/02/09",
-    "position": "Engineer internship",
-    "description": "短期間でのチーム開発",
+    "position": "エンジニアインターン",
+    "description": "短期間のチーム開発",
     "type": "company"
   },
   {
-    "name": "The Meiji University School of Science and Technology",
-    "term": "2019/04/01 ~ ",
-    "position": "Master",
-    "description": "Computer Science",
+    "name": "明治大学大学院",
+    "term": "2019/04 ~ ",
+    "position": "理工学研究科 情報科学専攻",
+    "description": "Master",
     "type": "university"
   },
   {
-    "name": "The Meiji University School of Science and Technology",
-    "term": "2015/04/01 ~ 2019/03/26",
-    "position": "Bachelor",
-    "description": "Computer Science",
+    "name": "明治大学",
+    "term": "2015/04 ~ 2019/03",
+    "position": "理工学部 情報科学科",
+    "description": "Bachelor",
     "type": "university"
   }
 ]
