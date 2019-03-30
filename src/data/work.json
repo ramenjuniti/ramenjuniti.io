@@ -18,13 +18,13 @@
     "name": "Summary Generator API",
     "description": "Summary Generatorのバックエンド部分で、自作したGoのパッケージlexrankmmrを使用。",
     "github": "https://github.com/ramenjuniti/summary-generator-api",
-    "tag": ["Golang", "Google App Engine"]
+    "tag": ["golang", "Google App Engine"]
   },
   {
     "name": "lexrankmmr",
     "description": "要約アルゴリズムであるLexRankとMMRで、与えられた文書中の文の重要度を算出するGoのパッケージ。",
     "link": "https://godoc.org/github.com/ramenjuniti/lexrankmmr",
     "github": "https://github.com/ramenjuniti/lexrankmmr",
-    "tag": ["Golang", "NLP"]
+    "tag": ["golang"]
   }
 ]

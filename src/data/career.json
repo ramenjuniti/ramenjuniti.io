@@ -8,7 +8,7 @@
   },
   {
     "name": "ヤフー株式会社",
-    "term": "2018/02/05 ~ 2018/02/09",
+    "term": "2018/02(5日間)",
     "position": "エンジニアインターン",
     "description": "短期間のチーム開発",
     "type": "company"
@@ -17,14 +17,14 @@
     "name": "明治大学大学院",
     "term": "2019/04 ~ ",
     "position": "理工学研究科 情報科学専攻",
-    "description": "Master",
+    "description": "修士",
     "type": "university"
   },
   {
     "name": "明治大学",
     "term": "2015/04 ~ 2019/03",
     "position": "理工学部 情報科学科",
-    "description": "Bachelor",
+    "description": "学士",
     "type": "university"
   }
 ]
