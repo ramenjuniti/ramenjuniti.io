@@ -26,5 +26,13 @@
     "link": "https://godoc.org/github.com/ramenjuniti/lexrankmmr",
     "github": "https://github.com/ramenjuniti/lexrankmmr",
     "tag": ["golang"]
+  },
+  {
+    "name": "Clip Go",
+    "description": "選択した文字をそのままThe Go Playgroundに貼り付けて実行するchromeの拡張機能。",
+    "link": "https://chrome.google.com/webstore/detail/clip-go/khkfegmjjbijinlbmffohmiofhpnjlja?hl=ja&authuser=0",
+    "github": "https://github.com/ramenjuniti/clipgo",
+    "youtube": "https://www.youtube.com/watch?v=QpwdJCKPXvk",
+    "tag": ["chrome extension"]
   }
 ]
