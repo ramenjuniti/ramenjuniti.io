@@ -33,6 +33,6 @@
     "link": "https://chrome.google.com/webstore/detail/clip-go/khkfegmjjbijinlbmffohmiofhpnjlja?hl=ja&authuser=0",
     "github": "https://github.com/ramenjuniti/clipgo",
     "youtube": "https://www.youtube.com/watch?v=QpwdJCKPXvk",
-    "tag": ["chrome extension"]
+    "tag": ["golang", "wasm", "chrome extension"]
   }
 ]
