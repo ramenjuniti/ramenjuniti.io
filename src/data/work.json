@@ -18,14 +18,14 @@
     "name": "Summary Generator API",
     "description": "Summary Generatorのバックエンド部分で、自作したGoのパッケージlexrankmmrを使用。",
     "github": "https://github.com/ramenjuniti/summary-generator-api",
-    "tag": ["golang", "Google App Engine"]
+    "tag": ["Go", "Google App Engine"]
   },
   {
     "name": "lexrankmmr",
     "description": "要約アルゴリズムであるLexRankとMMRで、与えられた文書中の文の重要度を算出するGoのパッケージ。",
     "link": "https://godoc.org/github.com/ramenjuniti/lexrankmmr",
     "github": "https://github.com/ramenjuniti/lexrankmmr",
-    "tag": ["golang"]
+    "tag": ["Go"]
   },
   {
     "name": "Clip Go",
@@ -33,6 +33,6 @@
     "link": "https://chrome.google.com/webstore/detail/clip-go/khkfegmjjbijinlbmffohmiofhpnjlja?hl=ja&authuser=0",
     "github": "https://github.com/ramenjuniti/clipgo",
     "youtube": "https://www.youtube.com/watch?v=QpwdJCKPXvk",
-    "tag": ["golang", "wasm", "chrome extension"]
+    "tag": ["Go", "wasm", "chrome extension"]
   }
 ]
