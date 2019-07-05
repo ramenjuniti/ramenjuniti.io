@@ -34,5 +34,12 @@
     "github": "https://github.com/ramenjuniti/clipgo",
     "youtube": "https://www.youtube.com/watch?v=QpwdJCKPXvk",
     "tag": ["Go", "wasm", "chrome extension"]
+  },
+  {
+    "name": "jtfidf",
+    "description": "日本語文書のTF、IDF、TFIDFを計算するGoのパッケージ。",
+    "link": "https://godoc.org/github.com/ramenjuniti/jtfidf",
+    "github": "https://github.com/ramenjuniti/jtfidf",
+    "tag": ["Go"]
   }
 ]
