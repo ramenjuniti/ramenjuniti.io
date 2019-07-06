@@ -1,30 +1,30 @@
 [
   {
-    "name": "株式会社ドリコム",
+    "name": "Drecom Co., Ltd.",
     "term": "2018/05 ~ ",
     "position": "エンジニアアルバイト",
     "description": "ウェブアプリケーション開発",
     "type": "company"
   },
   {
-    "name": "ヤフー株式会社",
+    "name": "Yahoo Japan Corporation",
     "term": "2018/02(5日間)",
     "position": "エンジニアインターン",
     "description": "短期間のチーム開発",
     "type": "company"
   },
   {
-    "name": "明治大学大学院",
+    "name": "Meiji University",
     "term": "2019/04 ~ ",
-    "position": "理工学研究科 情報科学専攻",
-    "description": "博士前期課程",
+    "position": "Graduate School of Science and Technology, Computer Science Course",
+    "description": "Master",
     "type": "university"
   },
   {
-    "name": "明治大学",
+    "name": "Meiji University",
     "term": "2015/04 ~ 2019/03",
-    "position": "理工学部 情報科学科",
-    "description": "学士",
+    "position": "School of Science and Technology, Department of Computer Science",
+    "description": "Bachelar",
     "type": "university"
   }
 ]
