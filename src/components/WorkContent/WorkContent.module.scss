@@ -11,6 +11,8 @@
 
     h3 {
       margin: 0;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
 
     > div {
