@@ -36,6 +36,12 @@
     "tag": ["Go", "wasm", "chrome extension"]
   },
   {
+    "name": "GoでChrome拡張機能を作ってみた",
+    "description": "Gopher道場#5卒業式&LT大会でLTやった時の資料。Clip Goの話をしました。",
+    "link": "https://docs.google.com/presentation/d/e/2PACX-1vR0_eoHLOFaFpdzEc4bpcVlAveT2YC5UUUFqKQA77GmTa45L1nxXm8WpaESkhnozCH7oLLwKrijVuN1/pub?start=false&loop=false&delayms=3000",
+    "tag": ["LT"]
+  },
+  {
     "name": "jtfidf",
     "description": "日本語文書のTF、IDF、TFIDFを計算するGoのパッケージ。",
     "link": "https://godoc.org/github.com/ramenjuniti/jtfidf",
