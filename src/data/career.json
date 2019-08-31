@@ -1,15 +1,22 @@
 [
   {
     "name": "Drecom Co., Ltd.",
-    "term": "2018/05 ~ ",
+    "term": "2018/05 ~ 現在",
     "position": "エンジニアアルバイト",
     "description": "ウェブアプリケーション開発",
     "type": "company"
   },
   {
+    "name": "VOYAGE GROUP, Inc.",
+    "term": "2019/08 (3週間)",
+    "position": "エンジニアインターンシップ Treasure",
+    "description": "チームで、0からプロダクトを開発",
+    "type": "company"
+  }
+  {
     "name": "Yahoo Japan Corporation",
-    "term": "2018/02(5日間)",
-    "position": "エンジニアインターン",
+    "term": "2018/02 (5日間)",
+    "position": "エンジニアインターンシップ",
     "description": "短期間のチーム開発",
     "type": "company"
   },
