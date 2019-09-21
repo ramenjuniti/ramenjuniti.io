@@ -7,9 +7,16 @@
     "type": "company"
   },
   {
+    "name": "CyberAgent, Inc.",
+    "term": "2019/09 (2日間)",
+    "position": "エンジニアインターンシップ",
+    "description": "APIヒダッカソン",
+    "type": "company"
+  },
+  {
     "name": "VOYAGE GROUP, Inc.",
     "term": "2019/08 (3週間)",
-    "position": "エンジニアインターンシップ Treasure",
+    "position": "エンジニアインターンシップ",
     "description": "チームで0からプロダクト開発",
     "type": "company"
   },
@@ -17,7 +24,7 @@
     "name": "Yahoo Japan Corporation",
     "term": "2018/02 (5日間)",
     "position": "エンジニアインターンシップ",
-    "description": "短期間のチーム開発",
+    "description": "チームでウェブアプリケーション開発",
     "type": "company"
   },
   {
