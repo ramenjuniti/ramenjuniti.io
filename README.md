@@ -4,7 +4,7 @@
 
 This is my personal website.
 
-This website hosted at https://ramenjujniti.io.
+This website hosted at https://ramenjuniti.io.
 
 ## Built With
 
