@@ -47,5 +47,12 @@
     "link": "https://godoc.org/github.com/ramenjuniti/jtfidf",
     "github": "https://github.com/ramenjuniti/jtfidf",
     "tag": ["Go"]
+  },
+  {
+    "name": "og",
+    "description": "逆さのGopherがただただ通り過ぎるだけのコマンド。",
+    "link": "https://godoc.org/github.com/ramenjuniti/og",
+    "github": "https://github.com/ramenjuniti/og",
+    "tag": ["Go"]
   }
 ]
