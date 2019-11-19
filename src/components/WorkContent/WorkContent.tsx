@@ -38,7 +38,7 @@ export default ({
   );
   return (
     <Card title={title} hoverable={true} className={styles.container}>
-      <p>{description}</p>
+      <div dangerouslySetInnerHTML={{ __html: description }} />
       <div>
         {tag.map(item => (
           <Tag color="orange" className={styles.tab}>
