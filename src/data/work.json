@@ -1,7 +1,7 @@
 [
   {
     "name": "VR Avoid Game",
-    "description": "ReactVR（現React360）で作った、ひたすら迫り来る障害物を避けるWebVRゲーム。スマホであれば2眼モードになるので、VRレンズを使用することで、VRでのプレイが可能。",
+    "description": "ReactVR（現React360）で作ったひたすら迫り来る障害物を避けるWebVRゲーム",
     "link": "https://vr-avoid-game.firebaseapp.com/",
     "github": "https://github.com/ramenjuniti/VR-Avoid-Game",
     "youtube": "https://youtu.be/OUO-4f3kzug",
@@ -9,27 +9,27 @@
   },
   {
     "name": "Summary Generator",
-    "description": "要約アルゴリズムであるLexRankとMMRを利用した、日本語を要約するWebアプリ。文書中の文をそのまま使用する抽出型要約。パラメータ調整可能。",
+    "description": "要約アルゴリズムであるLexRankとMMRを利用した、日本語を要約するウェブアプリケーション",
     "link": "https://ramenjuniti.github.io/summary-generator/",
     "github": "https://github.com/ramenjuniti/summary-generator",
     "tag": ["TypeScript", "React"]
   },
   {
     "name": "Summary Generator API",
-    "description": "Summary Generatorのバックエンド部分で、自作したGoのパッケージlexrankmmrを使用。",
+    "description": "Summary Generatorのバックエンド部分で、自作したGoのパッケージlexrankmmrを使用",
     "github": "https://github.com/ramenjuniti/summary-generator-api",
     "tag": ["Go", "Google App Engine"]
   },
   {
     "name": "lexrankmmr",
-    "description": "要約アルゴリズムであるLexRankとMMRで、与えられた文書中の文の重要度を算出するGoのパッケージ。",
+    "description": "要約アルゴリズムであるLexRankとMMRで、与えられた文書中の文の重要度を算出するGoのパッケージ",
     "link": "https://godoc.org/github.com/ramenjuniti/lexrankmmr",
     "github": "https://github.com/ramenjuniti/lexrankmmr",
     "tag": ["Go"]
   },
   {
     "name": "Clip Go",
-    "description": "選択した文字をそのままThe Go Playgroundに貼り付けて実行するchromeの拡張機能。",
+    "description": "選択した文字をそのままThe Go Playgroundに貼り付けて実行するchromeの拡張機能",
     "link": "https://chrome.google.com/webstore/detail/clip-go/khkfegmjjbijinlbmffohmiofhpnjlja?hl=ja&authuser=0",
     "github": "https://github.com/ramenjuniti/clipgo",
     "youtube": "https://www.youtube.com/watch?v=QpwdJCKPXvk",
@@ -37,22 +37,29 @@
   },
   {
     "name": "GoでChrome拡張機能を作ってみた",
-    "description": "Gopher道場#5卒業式&LT大会でLTやった時の資料。Clip Goの話をしました。",
+    "description": "Gopher道場#5卒業式&LT大会でのLT資料",
     "link": "https://docs.google.com/presentation/d/e/2PACX-1vR0_eoHLOFaFpdzEc4bpcVlAveT2YC5UUUFqKQA77GmTa45L1nxXm8WpaESkhnozCH7oLLwKrijVuN1/pub?start=false&loop=false&delayms=3000",
-    "tag": ["LT"]
+    "tag": ["LT", "Go", "wasm", "chrome extension"]
   },
   {
     "name": "jtfidf",
-    "description": "日本語文書のTF、IDF、TFIDFを計算するGoのパッケージ。",
+    "description": "日本語文書のTF、IDF、TFIDFを計算するGoのパッケージ",
     "link": "https://godoc.org/github.com/ramenjuniti/jtfidf",
     "github": "https://github.com/ramenjuniti/jtfidf",
     "tag": ["Go"]
   },
   {
     "name": "og",
-    "description": "逆さのGopherがただただ通り過ぎるだけのコマンド。",
+    "description": "逆さのGopherがただただ通り過ぎるだけのコマンド",
     "link": "https://godoc.org/github.com/ramenjuniti/og",
     "github": "https://github.com/ramenjuniti/og",
     "tag": ["Go"]
+  },
+  {
+    "name": "misc/chrome/gophertool: replace deprecated tabs.getSelected method",
+    "description": "Goへのコントリビューション",
+    "link": "https://go-review.googlesource.com/c/go/+/207402",
+    "github": "https://github.com/golang/go/commit/f9dd99cae3b08e2fea303b88ff6ffae6261f65b5",
+    "tag": ["Contribution", "Go"]
   }
 ]
