@@ -56,7 +56,7 @@
     "tag": ["Go"]
   },
   {
-    "name": "Goへのコントリビューション",
+    "name": "Contribution to Go",
     "description": "misc/chrome/gophertool: replace deprecated tabs.getSelected method",
     "link": "https://go-review.googlesource.com/q/owner:ramenjuniti%2540gmail.com",
     "github": "https://github.com/golang/go/commits?author=ramenjuniti",
